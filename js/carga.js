@@ -28,7 +28,7 @@ function Boton()
             document.getElementById("PowerBI1").style.display="none";
           }
           else{
-          alert("clave incorrecta")
+          alert("clave incorrecta, intente de nuevo por favor")
           } 
 
  }
