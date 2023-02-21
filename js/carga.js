@@ -19,8 +19,10 @@ function Boton()
     
 
         if(selectValue=="proyecto1" && clave=="123"){
-            document.getElementById("PowerBI").style.display="block";
-            document.getElementById("PowerBI1").style.display="none";
+            document.getElementById("Cabezote").style.display="block";
+            document.getElementById("Time").style.display="block";
+            document.getElementById("Perfomance").style.display="block";
+            document.getElementById("Issues").style.display="block";
           }
           else if(selectValue=="powerapps"){
             document.getElementById("PowerApps").style.display="block";
@@ -32,4 +34,22 @@ function Boton()
           } 
 
  }
+
+ function getListItems(listName, success, failure) {
+  var requestUri = _spPageContextInfo.webAbsoluteUrl +
+                   "/_api/web/lists/getbytitle('" + 'ProjectProgresReportSummary' + "')/items";
+  $.ajax({
+    url: requestUri,
+    method: "GET",
+    headers: { "Accept": "application/json; odata=verbose" },
+    success: function (data) {
+      success(data.d.results);
+      alert("exito");
+    },
+    error: function (data) {
+      failure(data);
+      alert("error");
+    }
+  });
+}
         

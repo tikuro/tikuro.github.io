@@ -1,39 +1,55 @@
-<html>
-    <head>
-        <script type="text/javascript" src="./js/carga.js"></script>
+<!DOCTYPE html>
+<html lang="es">
 
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertir HTML a PDF</title>
+    <!-- El script de la librería-->
+    <script src="./js/html2pdf.bundle.min.js"></script>
+    <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
+    <script src="./js/script.js"></script>
+    <script src="./js/carga.js"></script>
+    <!-- Algunos estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        
-        <select id="selector_proyectos" name="selector_proyectos" onchange="ShowSelected()">
-            <option value="proyecto1"> Proyecto 1</option>
-            <option value="proyecto2"> Proyecto 2</option>
-            <option value="proyecto3"> Proyecto 3</option>
-            <option value="proyecto4"> Proyecto 4</option>
-            <option value="powerapps"> powerapps</option>
-        </select>
-
-        <input id="clave" type="text">
-
-        <button id="carga" onclick="Boton()">Mostrar PowerBI</button>
+<body>
 
         
-        <div id="PowerBI" style="display:none">
-            <h1> IVI-CHIK-001 PROTOCOL DESVIATIONS</h1>
-            <iframe title="IVI-CHIK-001_ProtocolDeviations" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjg1ZGYwZGYtNTU3MS00YWJjLWI3ZDYtZDUxMWQyZGViNzNiIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
-        </div>
+    <select id="selector_proyectos" name="selector_proyectos" onchange="ShowSelected()">
+        <option value="proyecto1"> Proyecto 1</option>
+        <option value="proyecto2"> Proyecto 2</option>
+        <option value="proyecto3"> Proyecto 3</option>
+        <option value="proyecto4"> Proyecto 4</option>
+        <option value="powerapps"> powerapps</option>
+    </select>
 
-        <div id="PowerBI1" style="display:none">
-            <h1> Recruitmen 2019nCoV-503</h1>
-            <iframe title="Recruitment 2019nCoV-503" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiODc5YTIwMWYtNmYyMi00NjJhLWJlNjMtMGQ4ZTM3OWQwNDkxIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
-        </div>
+    <input id="clave" type="text">
 
-        <div id="PowerApps" style="display:none">
-            <h1> Recruitmen 2019nCoV-503</h1>
-            <iframe title="Recruitment 2019nCoV-503" width="600" height="373.5" src="https://apps.powerapps.com/play/e/default-6cd32b33-1991-4aff-8a2f-43641f8d9b76/a/ea6da446-fafe-43a4-ace3-3876c13cccb6?tenantId=6cd32b33-1991-4aff-8a2f-43641f8d9b76" frameborder="0" allowFullScreen="true"></iframe>
-        </div>
-        <div>hola mundo</div>
+    <button id="carga" onclick="Boton()">Mostrar PowerBI</button>
 
-    </body>
+    <button id="btnCrearPdf">Click aquí</button>
+
+    <input type="button" value=Imprimir onclick=javascript:window.print() />
+
+    
+    <div align="center" id="Cabezote" style="display:none">
+        <iframe title="Report Section" width="800" height="500.5" src="https://app.powerbi.com/view?r=eyJrIjoiMmVhZGRlMjUtZDZmNy00ODVmLWEwZGMtOWU5ODMxZDRjNWY0IiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+
+    <div align="center" id="Time" style="display:none">
+        <iframe title="Report Section" width="800" height="500.5" src="https://app.powerbi.com/view?r=eyJrIjoiMmVhZGRlMjUtZDZmNy00ODVmLWEwZGMtOWU5ODMxZDRjNWY0IiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+
+    <div align="center" id="Perfomance" style="display:none">
+        <iframe title="Report Section" width="800" height="500.5" src="https://app.powerbi.com/view?r=eyJrIjoiZDNhYTY5NmMtNTI4ZS00MzQ1LWE3NWYtMjdmNjdiZDQxYzlhIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+
+    <div align="center" id="Issues" style="display:none">
+        <iframe title="Report Section" width="800" height="500.5" src="https://app.powerbi.com/view?r=eyJrIjoiZmM4M2E3M2ItY2E0Mi00MTYwLWExNzAtNzJiNjI0ZTU3MmZmIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+
+</body>
+
 </html>
