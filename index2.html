@@ -7,6 +7,36 @@
 
     </head>
 
+    <select id="selector_proyectos" name="selector_proyectos" onchange="ShowSelected()">
+        <option value="proyecto1"> Proyecto 1</option>
+        <option value="proyecto2"> Proyecto 2</option>
+        <option value="proyecto3"> Proyecto 3</option>
+        <option value="proyecto4"> Proyecto 4</option>
+        <option value="powerapps"> powerapps</option>
+    </select>
+
+    <input id="clave" type="text">
+
+    <button id="carga" onclick="Boton()">Mostrar PowerBI</button>
+
+    <input type="button" value=Imprimir onclick=javascript:window.print() />
+
+    
+    <div align="center" id="Cabezote" style="display:none">
+        <iframe title="Report Section" width="800" height="500.5" src="https://app.powerbi.com/view?r=eyJrIjoiMmVhZGRlMjUtZDZmNy00ODVmLWEwZGMtOWU5ODMxZDRjNWY0IiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+
+    <div align="center" id="Time" style="display:none">
+        <iframe title="Report Section" width="800" height="500.5" src="https://app.powerbi.com/view?r=eyJrIjoiMmVhZGRlMjUtZDZmNy00ODVmLWEwZGMtOWU5ODMxZDRjNWY0IiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+
+    <div align="center" id="Perfomance" style="display:none">
+        <iframe title="Report Section" width="800" height="500.5" src="https://app.powerbi.com/view?r=eyJrIjoiZDNhYTY5NmMtNTI4ZS00MzQ1LWE3NWYtMjdmNjdiZDQxYzlhIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+
+    <div align="center" id="Issues" style="display:none">
+        <iframe title="Report Section" width="800" height="500.5" src="https://app.powerbi.com/view?r=eyJrIjoiZmM4M2E3M2ItY2E0Mi00MTYwLWExNzAtNzJiNjI0ZTU3MmZmIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
     <div id="PowerBI" style="display:none">
         <h1> IVI-CHIK-001 PROTOCOL DESVIATIONS</h1>
         <iframe type="application/pdf" title="IVI-CHIK-001_ProtocolDeviations" width="1000" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiZjg1ZGYwZGYtNTU3MS00YWJjLWI3ZDYtZDUxMWQyZGViNzNiIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
@@ -25,13 +55,3 @@
     
 </html>
 
-
-%SendKeys% "{TAB}"
-%SendKeys% "{TAB}"
-%SendKeys% "{TAB}"
-%SendKeys% "{TAB}"
-%SendKeys% "{TAB}"
-%SendKeys% "{TAB}"
-%SendKeys% "{TAB}"
-%SendKeys% "{TAB}"
-%SendKeys% "{ENTER}"

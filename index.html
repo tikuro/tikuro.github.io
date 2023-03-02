@@ -4,19 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convertir HTML a PDF</title>
+    <title>Progress Report</title>
     <!-- El script de la librería-->
     <script src="./js/html2pdf.bundle.min.js"></script>
     <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
     <script src="./js/script.js"></script>
     <script src="./js/carga.js"></script>
     <!-- Algunos estilos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Theme opcional -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="pagina.css" rel="stylesheet">
+  <style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>
+    
 </head>
 
-<body>
 
-        
+
+
+<body>
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+       
+        <img src="./img/logoVax.png">
+    </a>
+    <h1 align="center">VISUALIZACIÓN DE REPORTES</h1>
+    <ul class="navbar-nav px-3">
+    </ul>
+  </nav>
+
+  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+      <h1 class="h2">Dashboard</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group mr-2">
+          <button class="btn btn-info" onclick="Boton()">Consultar</button>
+          <button class="btn btn-info" onclick=javascript:window.print()>Exportar</button>
+          <button class="btn btn-info" onclick="ocultarClase()">Limpiar</button>
+    </div>
+  </main>
+
     <select id="selector_proyectos" name="selector_proyectos" onchange="ShowSelected()">
         <option value="proyecto1"> Proyecto 1</option>
         <option value="proyecto2"> Proyecto 2</option>
@@ -26,29 +61,162 @@
     </select>
 
     <input id="clave" type="text">
+    <br>
+    <br>
+    <br>
+    <div id="cuerpo">
+      <div id="titulo" align="center" style="display:none">
+        <table border="1" width="800">
+          <tr>
+            <td rowspan="4" align="center"><img src="./img/logoVax.png" width="100"></td>
+            <td colspan="6" align="center" style="color:white; background-color: #007bff"><strong>PROGRESS REPORT</strong></td>
+          </tr>
+          <tr>
+            <td align="center" style="color:white; background-color: #007bff"><strong>Sponsor</strong></td>
+            <td align="center" style="color:white; background-color: #007bff"><strong>PM</strong></td>
+            <td align="center" style="color:white; background-color: #007bff"><strong>PL</strong></td>
+            <td align="center" style="color:white; background-color: #007bff"><strong>(e)TMF</strong></td>
+            <td align="center" style="color:white; background-color: #007bff"><strong>Date of last report</strong></td>
+            <td align="center" style="color:white; background-color: #007bff"><strong>Date of current report</strong></td>   
+          </tr>
+          <tr>
+            <td align="center" style="font-size: 10px;">IVI</td>
+            <td align="center" style="font-size: 10px;">Javier Arguijo</td>
+            <td align="center" style="font-size: 10px;">Tom Herremans</td>
+            <td align="center" style="font-size: 10px;">(DIA) paper TMF (VaxTrials)</td>
+            <td align="center" style="font-size: 10px;">24-ene-2023</td>
+            <td align="center" style="font-size: 10px;">7-feb-2023</td>
+          </tr> 
+          <tr>
+            <td align="center" style="color:white; background-color: #007bff"><strong>Country</strong></td> 
+            <td colspan="5" align="center">COL/PAN/THAI/GUA/CR</td> 
+          </tr>
+          <tr>
+            <td id="titulos" style="color:white; background-color: #007bff" align="center" colspan="7"><strong>Brief Study Overview</strong></td>
+          </tr>
+          <tr>
+            <td  colspan="7" style="font-size: 10px;">A Phase II/III Adaptive Seamless Design, Randomized, Controlled Trial To Evaluate Safety And Immunogenicity of 2 Dose-Regimen Of BBV87 Chikungunya Vaccine In Healthy Subjects Aged 12 to 65 years In Panama, Colombia, and Thailand.Primary Objectives :• To evaluate the safety and tolerability profile of BBV87 40μg at 0-6 M schedule (Applicable to part A) and to evaluate the safety and tolerability profile across two (2) dose strengths of BBV87 (i.e., 20μg and 40μg) at 0-28 days schedule. (Applicable to parts B and C).• To evaluate the immunogenicity 28 days PD2 (i.e., GMTs) at 1 month interval across two (2) dose strengths (i.e., 20μg vs 40μg).(Applicable to parts B and C)Secondary Objectives including long term follow up 6 months post last dose. (Applicable to parts B and C)parts A, B, and C)Relevant attributes:Population: first intake in pediatric population (12-17 years old ) .Formulation: The component tested is the BBV87 20 and 40 micrograms. BBV87 is an inactivated Chikungunya virus manufactured by Bharat Biotech International Limited.Schedule: The patients will be vaccinated at 2 doses (each 6 months)</td>
+          </tr>
+          <tr>
+            <td id="titulos" align="center" colspan="7" style="color:white; background-color: #007bff"><strong>Study status - Country - Summary</strong></td>
+          </tr>
+          <tr>
+            <td  colspan="7" style="font-size: 10px;" >Active follow-up phase part A/B. Last study visits/contacts planned for end Nov. Preparing for part A/B database cleaning. 13Dec2022 SDV was completed by Vaxtrials Team however some pending frozen pages need to be unlock for IVI/ZIFO to start the Data base clean, this was completed until 19Dec2022. Data Base Clean is in progress, several queries have been raised, missing pages identified and new SDV pages the deadline to complete this activity is 30Jan2023 . DBC completed by Vaxtrials team on 27Jan2023.IVI communicate new timelines for initial dose in Part C considering start with 20Mcg on march 2023 and 40Mcg in April 2023, On 05Feb2023 IVI notified to Vaxtrials the new timelines for Part C considering the dose selection if 20Mcg is selected to start date is projected for May but if 40Mcg is selected the start date is until September according to their final review in the other phase of the trials.</td>
+          </tr>
+          <tr>
+            <td id="titulos" align="center" colspan="4" style="color:white; background-color: #007bff"><strong>Keys accomplishments (since last report)</strong></td>
+            <td id="titulos" align="center" colspan="4" style="color:white; background-color: #007bff"><strong>Top priorities for the next period</strong></td>
+          </tr>
+          <tr>
+            <td  colspan="4" style="font-size: 10px;" >1. Data Base lock completed on time on 27Jan2023</td>
+            <td  colspan="3" style="font-size: 10px;">*Laboratory CAPA for site L pending to review evidences, On 22-25Nov2022 Quality visit was performed by the PM to Guatemala sites and review all the relevant Documents for Lab. CECLISA, on 15Dec2022 Quality Team recommend additional changes to Regulatory team. On 07Feb2023 final CAPA was shared with IVI.*Assign Quality Review Fourth Level to sponsor to final verification, Sponsor training in TMF Quality control and Quality review performed on 02Feb2023.*DBC deadline for pending actions 30Jan2023 Completed 27Jan2023</td>
+          </tr>
+          <br>
+          <br>
+          <br>
+          <br>
+          <tr>
+            
+          </tr>
+          <tr>
+            <td colspan="7" align="center" style="color:white; background-color: #007bff"><strong>TIME</strong></td>
+          </tr>
+          <tr>
+            <td colspan="7" align="center">
+                <div align="center" id="Time" style="display:none">
+                  <iframe title="Time" width="800" height="350.5" src="https://app.powerbi.com/view?r=eyJrIjoiNWQ1OThlNTUtZTdjZi00YjQ3LWIwZjQtMjE1NTg1YmYwODlmIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>    
+                </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="7" align="center" style="color:white; background-color: #007bff"><strong>PERFORMANCES</strong></td>
+          </tr>
+          <tr>
+            <td colspan="7" align="center">
+                <div align="center" id="Perfomance" style="display:none">
+                  <iframe title="Report Section" width="800" height="300.5" src="https://app.powerbi.com/view?r=eyJrIjoiZDNhYTY5NmMtNTI4ZS00MzQ1LWE3NWYtMjdmNjdiZDQxYzlhIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
+                 </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="7" align="center" style="color:white; background-color: #007bff"><strong>ISSUES and ACTION TRACKER</strong></td>
+          </tr>
+          <tr>
+            <tr>
+              <td align="center" style="color:white; background-color: #007bff"><strong>Issue Status</strong></td>
+              <td align="center" style="color:white; background-color: #007bff"><strong>Issue Title</strong></td>
+              <td align="center" style="color:white; background-color: #007bff"><strong>Issue Description</strong></td>
+              <td align="center" style="color:white; background-color: #007bff"><strong>Responsible</strong></td>
+              <td align="center" style="color:white; background-color: #007bff"><strong>Creation Date</strong></td>
+              <td align="center" style="color:white; background-color: #007bff"><strong>Action Date</strong></td> 
+              <td align="center" style="color:white; background-color: #007bff"><strong>Resolution Action</strong></td>   
+            </tr>
+          </tr>
+          <tr>
+            <td align="center" style="font-size: 10px;">Completed</td>
+            <td align="center" style="font-size: 10px;">DBC Pending actions</td>
+            <td align="center" style="font-size: 10px;">During the progress of the Data Base Clean the following pending actions are identified:1. Observational tracker shared from ZIFO, with missing pages, and pending pages for inactivate by the site, missing information.2. 59 Pending SDV pages for site D;E and K3. 88 Open Queries.</td>
+            <td align="center" style="font-size: 10px;">PM/CRA/Sites</td>
+            <td align="center" style="font-size: 10px;">10Jan2023</td>
+            <td align="center" style="font-size: 10px;">30Jan2023</td>
+            <td align="center" style="font-size: 10px;">10Jan2023 The PM shared with the CRA the observational tracker and the medidata report to follow up the pending actions until 16Jan2023.JA 23Jan2023 the pending actions for observational tracker were finaalized, the Vaxtrials CRA will complete the IMV since 23Jan2023 to 27Jan2023 to complete the pending SDV. JA06Feb2023 all pending actions for Data Base Clean were completed on 27Jan2023</td>
+          </tr> 
+          <tr>
+            <td align="center" style="font-size: 10px;">Active</td>
+            <td align="center" style="font-size: 10px;">Pending Evidence for IVI Audit Qualified Visit to Vaxtrials 2022-VQ-013-VaxTrials</td>
+            <td align="center" style="font-size: 10px;">During the Audit several findings were identifies: *Pending eTMF/ISF reconciliation and Quality Review*Issues in Vaxtrial Team trainings and CVs*Incorrect management in Action Items*Project Management blinded and unblind without a define roles and responsabilities</td>
+            <td align="center" style="font-size: 10px;">Quality Team/PM</td>
+            <td align="center" style="font-size: 10px;">05Dec2022</td>
+            <td align="center" style="font-size: 10px;">28-feb-22</td>
+            <td align="center" style="font-size: 10px;">1. The CAPA will be share to sponsor on 21Dec20222. PM need to follow up the pending evidene and training to be performed on 20233. JA 10Jan2023 the final version of the CAPA was sent to the auditor on21Dec2022.4. JA 10Jan2023 Action item Training , TMF training, CAPA tracker , PMP updated were already shared with the sponsor .5. JA24Jan2023 the pending actions will be follow up with our quality team6. Actions Items follow up training for all the Staffof Vaxtrials was completed on 08Feb2023</td>
+          </tr> 
+          <tr>
+            <td align="center" style="font-size: 10px;">Completed</td>
+            <td align="center" style="font-size: 10px;">CAPA for Vaxtrials CRA site K</td>
+            <td align="center" style="font-size: 10px;">Incorrect follow up the SAE/PREG notification for site K , on 23nov2022 the site notify the final resolution of a Pregnancy with congenital malformation, the CRA receive the e-mail, but didn´t identify the SAE , for this reason the SAE was notified after 24hours on 27Nov2022</td>
+            <td align="center" style="font-size: 10px;">PM/CRA/CRA Manager</td>
+            <td align="center" style="font-size: 10px;">01Dec2022</td>
+            <td align="center" style="font-size: 10px;">10-jan-22</td>
+            <td align="center" style="font-size: 10px;">01Dec2022 the PM request to the CRA and CRA Manager to complete a CAPA due to noncompliance in SAE identification in site communication of Preganacy Report.JA 10Jan2023 The CRA shared with quality team the CAPA on 23Dec2022, the comments were received the same day, and on 10Jan2023 the final version was sent to the quality team for final review.JA 24Jan2023 the final CAPA was sent to sponsor on 24Jan2023. No pending actions.</td>
+          </tr>
+          <tr>
+            <td align="center" style="font-size: 10px;">Active</td>
+            <td align="center" style="font-size: 10px;">Site LIncorrect Laboratory information include in the ICF version 2.0</td>
+            <td align="center" style="font-size: 10px;">CECLISA notified on 21sep2021 to GML the change of Lab from Biosoluciones to Biolab, however the information was omitted by mistake and this was detected until Jul2022</td>
+            <td align="center" style="font-size: 10px;">Regulatory Team, PM, GML</td>
+            <td align="center" style="font-size: 10px;">10-Nov-22</td>
+            <td align="center" style="font-size: 10px;">05-Dec-2022</td>
+            <td align="center" style="font-size: 10px;">*Regulatory Team complete the ICF version 4.0 revission before to submit to EC.*GML complete a CAPA #GUA-086 pending to review for Vaxtrials*The Site is completing the Validation of their own Lab, this was include in the ICF.*New ICF was notified to EC on 27Oct2022 and approved on 09Nov2022*On 07Feb2023 the final CAPA was sent to sponsor for their review.</td>
+          </tr>
 
-    <button id="carga" onclick="Boton()">Mostrar PowerBI</button>
 
-    <button id="btnCrearPdf">Click aquí</button>
 
-    <input type="button" value=Imprimir onclick=javascript:window.print() />
+        </table>
+        <br>
+        <br>
+      </div>  
+      <div align="center" id="Disclaimer" style="display:none">
+        <p> Property of VaxTRIALS – Limited Publication.<br>
+          Any unauthorized review, use, disclosure, or distribution is prohibited
+        </p>
+      </div>
+  </div>
 
-    
-    <div align="center" id="Cabezote" style="display:none">
-        <iframe title="Report Section" width="800" height="500.5" src="https://app.powerbi.com/view?r=eyJrIjoiMmVhZGRlMjUtZDZmNy00ODVmLWEwZGMtOWU5ODMxZDRjNWY0IiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </div>
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
 
-    <div align="center" id="Time" style="display:none">
-        <iframe title="Report Section" width="800" height="500.5" src="https://app.powerbi.com/view?r=eyJrIjoiMmVhZGRlMjUtZDZmNy00ODVmLWEwZGMtOWU5ODMxZDRjNWY0IiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </div>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
 
-    <div align="center" id="Perfomance" style="display:none">
-        <iframe title="Report Section" width="800" height="500.5" src="https://app.powerbi.com/view?r=eyJrIjoiZDNhYTY5NmMtNTI4ZS00MzQ1LWE3NWYtMjdmNjdiZDQxYzlhIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </div>
-
-    <div align="center" id="Issues" style="display:none">
-        <iframe title="Report Section" width="800" height="500.5" src="https://app.powerbi.com/view?r=eyJrIjoiZmM4M2E3M2ItY2E0Mi00MTYwLWExNzAtNzJiNjI0ZTU3MmZmIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </div>
+        
 
 </body>
 
