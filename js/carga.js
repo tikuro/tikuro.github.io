@@ -23,6 +23,7 @@ function Boton()
             document.getElementById("Disclaimer").style.display="block";
             document.getElementById("titulo").style.display="block";
             document.getElementById("New").style.display="block";
+            document.getElementById("Performance").style.display="block";
           }
           else if(selectValue=="powerapps"){
             document.getElementById("PowerApps").style.display="block";
