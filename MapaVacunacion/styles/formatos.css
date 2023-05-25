@@ -1,0 +1,29 @@
+body{
+    background: white;
+}
+
+.mapdiv{
+width:35%;
+margin:auto;
+}
+
+.mapdivlatinoamerica{
+    width:35%;
+    margin:auto;
+    }
+
+.mapdiv polyline{
+    fill: #f0e68c;
+    stroke: "black";
+    stroke-width: 0.5px;
+}
+
+.mapdiv :hover{
+    fill:#999;
+}
+
+.mapdivlatinoamerica g{
+    fill: #f0e68c;
+    stroke: "black";
+    stroke-width: 0.5px;
+}
