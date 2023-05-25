@@ -7,10 +7,12 @@ width:35%;
 margin:auto;
 }
 
-.mapdivlatinoamerica{
-    width:35%;
-    margin:auto;
-    }
+.mapcentroamerica{
+
+margin:auto;    
+}
+
+
 
 .mapdiv polyline{
     fill: #f0e68c;
@@ -22,7 +24,7 @@ margin:auto;
     fill:#999;
 }
 
-.mapdivlatinoamerica g{
+.mapdiv g{
     fill: #f0e68c;
     stroke: "black";
     stroke-width: 0.5px;
