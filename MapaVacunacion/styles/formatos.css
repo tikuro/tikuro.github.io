@@ -4,9 +4,9 @@ body{
 
 .mapdiv{
 
-width: auto;
-height: auto;
-margin:auto;
+
+margin: auto;
+
 }
 
 
@@ -27,4 +27,5 @@ margin:auto;
     fill: #f0e68c;
     stroke: "black";
     stroke-width: 0.5px;
+    
 }
