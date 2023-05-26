@@ -3,25 +3,24 @@ body{
 }
 
 .mapdiv{
-width:35%;
+
+width: auto;
+height: auto;
 margin:auto;
 }
 
-.mapcentroamerica{
-
-margin:auto;    
-}
 
 
 
-.mapdiv polyline{
-    fill: #f0e68c;
+
+.mapdiv path{
+    fill: #00B0F0;
     stroke: "black";
     stroke-width: 0.5px;
 }
 
 .mapdiv :hover{
-    fill:#999;
+    fill:#181833;
 }
 
 .mapdiv g{
