@@ -3,9 +3,9 @@ body{
 }
 
 .mapdiv{
-
-
-margin: auto;
+    position: absolute;
+    left: 30%;
+    margin: -25px 0 0 -25px;
 
 }
 
