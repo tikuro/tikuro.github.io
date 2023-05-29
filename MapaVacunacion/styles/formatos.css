@@ -24,8 +24,14 @@ body{
 }
 
 .mapdiv g{
-    fill: #f0e68c;
-    stroke: "black";
+    fill: #00B0F0;
+    stroke: #00B0F0;
     stroke-width: 0.5px;
     
+}
+
+#ar{
+    fill: #00B0F0;
+    stroke: "black";
+    stroke-width: 0.5px;   
 }
