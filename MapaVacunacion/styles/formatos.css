@@ -3,17 +3,14 @@ body{
 }
 
 .mapdiv{
-    position: absolute;
-    left: 30%;
+    display:grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2;
+    position: float;
+    left: 10%;
     margin: -25px 0 0 -25px;
 
 }
-
-.table{
-position:float;  
-}
-
-
 
 
 .mapdiv path{
