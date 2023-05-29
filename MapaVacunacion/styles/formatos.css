@@ -4,8 +4,8 @@ body{
 
 .mapdiv{
     display:grid;
-    grid-auto-flow: column;
-    grid-template-columns: 2;
+    
+    grid-template-rows: 2;
     position: float;
     left: 10%;
     margin: -25px 0 0 -25px;
