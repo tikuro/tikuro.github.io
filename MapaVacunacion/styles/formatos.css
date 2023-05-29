@@ -16,7 +16,7 @@ body{
 .mapdiv path{
     fill: #00B0F0;
     stroke: "black";
-    stroke-width: 0.5px;
+    stroke-width: 1px;
 }
 
 .mapdiv :hover{
@@ -26,12 +26,7 @@ body{
 .mapdiv g{
     fill: #00B0F0;
     stroke: #00B0F0;
-    stroke-width: 0.5px;
+    stroke-width: 1px;
     
 }
 
-#ar{
-    fill: #00B0F0;
-    stroke: "black";
-    stroke-width: 0.5px;   
-}
