@@ -30,3 +30,11 @@ body{
     
 }
 
+.button-total {
+    text-align:center;
+    background-color: #63ACFC;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 0px 0px 30px 30px;
+    padding: 35px;
+}
