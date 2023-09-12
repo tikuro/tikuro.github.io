@@ -18,21 +18,14 @@ function Boton()
 
     
 
-        if(selectValue=="proyecto1" && clave=="123"){
-            document.getElementById("Time").style.display="block";
-            document.getElementById("Disclaimer").style.display="block";
-            document.getElementById("titulo").style.display="block";
-            document.getElementById("New").style.display="block";
-            document.getElementById("Performance").style.display="block";
-          }
-          else if(selectValue=="powerapps"){
-            document.getElementById("PowerApps").style.display="block";
-            document.getElementById("PowerBI").style.display="none";
-            document.getElementById("PowerBI1").style.display="none";
-          }
-          else{
-          alert("clave incorrecta, intente de nuevo por favor")
-          } 
+        
+  document.getElementById("Time").style.display="block";
+  document.getElementById("Disclaimer").style.display="block";
+  document.getElementById("titulo").style.display="block";
+  document.getElementById("New").style.display="block";
+  document.getElementById("Performance").style.display="block";
+      
+        
 
  }
 
