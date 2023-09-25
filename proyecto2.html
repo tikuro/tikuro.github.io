@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progress Report</title>
+    <title>Progress Report Proyecto 2</title>
     <!-- El script de la librería-->
     <script src="./js/html2pdf.bundle.min.js"></script>
     <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
     <script src="./js/script.js"></script>
     <script src="./js/carga.js"></script>
+    
     <!-- Algunos estilos -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Theme opcional -->
@@ -43,56 +44,33 @@
 
   <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-      <h1 class="h2">Dashboard</h1>
-      <div class="btn-toolbar mb-2 mb-md-0">
-        <div class="btn-group mr-2">
-          <button class="btn btn-info" onclick="Boton()">Consultar</button>
-          <button class="btn btn-info" onclick=javascript:window.print()>Exportar</button>
-          <button class="btn btn-info" onclick="ocultarClase()">Limpiar</button>
-    </div>
+  
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group mr-2">
+            
+            <button class="btn btn-info" onclick=javascript:window.print()>Exportar</button>
+            
+      </div>    
+      
   </main>
 
-    <select id="selector_proyectos" name="selector_proyectos" onchange="ShowSelected()">
-        <option value="proyecto1"> Proyecto 1</option>
-        <option value="proyecto2"> Proyecto 2</option>
-        <option value="proyecto3"> Proyecto 3</option>
-        <option value="proyecto4"> Proyecto 4</option>
-        <option value="powerapps"> powerapps</option>
-    </select>
+    
 
-    <input id="clave" type="text">
-    <br>
-    <br>
-    <br>
+    
     <div id="cuerpo">
-      <div id="titulo" align="center" style="display:none">
+      <div id="titulo" align="center" style="display:block">
         <table border="1" width="800">
           
           <tr>
-            <td colspan="7" align="center" style="color:white; background-color: #007bff"><strong>MILESTONES</strong></td>
+            <td colspan="7" align="center" style="color:white; background-color: #007bff"><strong></strong></td>
           </tr>
           <tr>
             <td colspan="7" align="center">
-                <div align="center" id="Time" style="display:none">
-                  <iframe title="Time" width="800" height="350.5" src="https://app.powerbi.com/view?r=eyJrIjoiNWQ1OThlNTUtZTdjZi00YjQ3LWIwZjQtMjE1NTg1YmYwODlmIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>    
+                <div align="center" id="Time" style="display:block">
+                  <iframe title="Time" width="1024" height="600.5" src="https://app.powerbi.com/view?r=eyJrIjoiZDMwYTQ3YmQtMDIxYS00MzdkLWI5Y2UtYmU1MDUxMTY4ZWM0IiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>    
                 </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="7" align="center">
-              <div align="center" id="New" style="display:none">
-                <iframe title="Time_II" width="800" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNWQ5ZjU0NGUtYTY0Yy00YmE2LTk3OTUtYTUxMDhlYWU4Y2YwIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="7" align="center" style="color:white; background-color: #007bff"><strong>QUALITY PERFORMANCE</strong></td>
-          </tr>
-          <tr>
-            <td colspan="7" align="center">
-                <div align="center" id="Performance" style="display:none">
-                  <iframe title="Report Section" width="800" height="300.5" src="https://app.powerbi.com/view?r=eyJrIjoiZDNhYTY5NmMtNTI4ZS00MzQ1LWE3NWYtMjdmNjdiZDQxYzlhIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
-                 </div>
             </td>
           </tr>
             <td colspan="7" align="center" style="color:white; background-color: #007bff"><strong>CONVENTIONS</strong></td>
