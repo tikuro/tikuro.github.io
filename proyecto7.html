@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Report VLA1553-221</title>
+    <!-- El script de la librería-->
+    <script src="./js/html2pdf.bundle.min.js"></script>
+    <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
+    <script src="./js/script.js"></script>
+    <script src="./js/carga.js"></script>
+    
+    <!-- Algunos estilos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Theme opcional -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="pagina.css" rel="stylesheet">
+  <style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>
+    
+</head>
+
+
+
+
+<body>
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+       
+        <img src="./img/logoVax.png">
+    </a>
+    <h1 align="center">VISUALIZACIÓN DE REPORTES</h1>
+    <ul class="navbar-nav px-3">
+    </ul>
+  </nav>
+
+  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+  
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group mr-2">
+            
+            <button class="btn btn-info" onclick=javascript:window.print()>Exportar</button>
+            
+      </div>    
+      
+  </main>
+
+    
+
+    
+    <div id="cuerpo">
+      <div id="titulo" align="center" style="display:block">
+        <table border="1" width="800">
+          
+          <tr>
+            <td colspan="7" align="center" style="color:white; background-color: #007bff"><strong></strong></td>
+          </tr>
+          <tr>
+            <td colspan="7" align="center">
+                <div align="center" id="Time" style="display:block">
+                  <iframe title="VLA1553-221_Progress_Report" width="1200" height="2020" src="https://app.powerbi.com/view?r=eyJrIjoiMzIxOTgyMjctOTA1NS00NWE3LTkxOWUtOWI3Nzc1M2M4MzJiIiwidCI6IjZjZDMyYjMzLTE5OTEtNGFmZi04YTJmLTQzNjQxZjhkOWI3NiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>  
+                </div>
+            </td>
+          </tr>
+            <td colspan="7" align="center" style="color:white; background-color: #007bff"><strong>CONVENTIONS</strong></td>
+
+          </tr>
+          <tr>
+            <td colspan="7" align="center"><img src="./img/QualityCriteria.png"></td> 
+          </tr>
+
+
+
+        </table>
+        <br>
+        <br>
+      </div>  
+      <div align="center" id="Disclaimer" style="display:none">
+        <p> Property of VaxTRIALS – Limited Publication.<br>
+          Any unauthorized review, use, disclosure, or distribution is prohibited
+        </p>
+      </div>
+  </div>
+
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+        
+
+</body>
+
+</html>
